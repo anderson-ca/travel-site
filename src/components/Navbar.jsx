@@ -9,7 +9,7 @@ const Navbar = () => {
     const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(true);
+    const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
         if (window.innerWidth <= 960) {
@@ -74,7 +74,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    {/* {button && <Button>SIGN UP</Button>} */}
+                    {button && <Button>SIGN UP</Button>}
                 </div>
             </nav>
         </>
